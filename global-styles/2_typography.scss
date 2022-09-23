@@ -1,52 +1,69 @@
 /* https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
 
+$body--font-size: calc(14px + 0.35 * var(--glob-vars_size-read));
+$body--line-height-multiplier: 1.5;
+$body--line-height: calc($body--line-height-multiplier * $body--font-size);
+$h-family--line-height-multiplier: 1;
+$margin-bottom-multiplier: 0.5;
 /* autoprefixer grid: autoplace */
 body {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: calc(14px + 0.35 * var(--glob-vars_size-read));
+  // --body--font-size: calc(14px + 0.35 * var(--glob-vars_size-read));
+  font-size: $body--font-size;
+  line-height: $body--line-height;
   color: var(--glob-vars_color-black);
-  /* Responsive base font size */
-  line-height: calc(14px + 1.05 * var(--glob-vars_size-read));
-  /* Responsive Vertical Rhythm */
 }
 
 h1 {
-  font-size: 1.912em;
-  line-height: clamp(
-    1.3em,
-    calc(18px + 1.8 * var(--glob-vars_size-read)),
-    1.471em
+  $this-font-size: 1.912em;
+  font-size: $this-font-size;
+  line-height: max(
+    $h-family--line-height-multiplier * $this-font-size,
+    $body--line-height
   );
-  /* Responsive Vertical Rhythm */
 }
 
 h2 {
-  font-size: 1.616em;
-  line-height: calc(18px + 1 * var(--glob-vars_size-read));
-  /* Responsive Vertical Rhythm */
+  $this-font-size: 1.616em;
+  font-size: $this-font-size;
+  line-height: max(
+    $h-family--line-height-multiplier * $this-font-size,
+    $body--line-height
+  );
 }
 
 h3 {
-  font-size: 1.471em;
-  line-height: calc(18px + 0.7 * var(--glob-vars_size-read));
-  /* Responsive Vertical Rhythm */
+  $this-font-size: 1.471em;
+  font-size: $this-font-size;
+  line-height: max(
+    $h-family--line-height-multiplier * $this-font-size,
+    $body--line-height
+  );
 }
 
 h4 {
-  font-size: 1.3em;
+  $this-font-size: 1.3em;
+  font-size: $this-font-size;
+  line-height: max(
+    $h-family--line-height-multiplier * $this-font-size,
+    $body--line-height
+  );
 }
 
 h5 {
-  font-size: 1.243em;
+  $this-font-size: 1.243em;
+  font-size: $this-font-size;
+  line-height: max(
+    $h-family--line-height-multiplier * $this-font-size,
+    $body--line-height
+  );
 }
 
 h6 {
-  font-size: 1.132em;
-}
-
-h4,
-h5,
-h6 {
-  line-height: calc(18px + 0.2 * var(--glob-vars_size-read));
-  /* Responsive Vertical Rhythm */
+  $this-font-size: 1.132em;
+  font-size: $this-font-size;
+  line-height: max(
+    $h-family--line-height-multiplier * $this-font-size,
+    $body--line-height
+  );
 }

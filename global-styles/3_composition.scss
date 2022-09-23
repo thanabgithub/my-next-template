@@ -4,21 +4,7 @@ body {
   background-color: var(--glob-vars_color-white);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 calc(12px + 1.05 * var(--glob-vars_size-read)) 0;
+* + :is(h1, h2, h3, h4, h5, h6, p) {
+  margin-top: 0.5em;
   /* Responsive margins */
-}
-
-:is(h1, h2, h3, h4, h5, h6):last-child {
-  margin-bottom: 0;
-  /* Responsive margins */
-}
-
-* + * {
-  margin: 0 0 1em;
 }
