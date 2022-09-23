@@ -51,4 +51,17 @@
   }
 }
 
+// effect
+
+.utils_effect {
+  &--kp-btn:hover {
+    // Kevin Powell's technique
+    transform: scale(1.2);
+  }
+  &--kp-btn:focus {
+    // Kevin Powell's technique
+    outline-offset: 0.5em;
+  }
+}
+
 // shadow

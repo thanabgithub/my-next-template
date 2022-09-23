@@ -7,7 +7,7 @@ export default function Home() {
         <h2 className="card">Hello World</h2>
         <h2 className="card"> scss test</h2>
       </div>
-      <div className="hello utils_box--center-children--fit">
+      <div className="hello utils_box--center-children--fit utils_effect--kp-btn">
         <h2 className="card">Hello World</h2>
         <h2 className="card"> scss test</h2>
       </div>

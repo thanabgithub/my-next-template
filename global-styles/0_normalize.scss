@@ -8,6 +8,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+// picalili.li
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 /* joshwcomeau */
 *,
 *::before,
@@ -35,6 +40,9 @@ body {
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   /* https://css-tricks.com/the-notch-and-css/ */
   overscroll-behavior-x: none;
+  // picalil.li
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
 
 /* normalize.css */
@@ -279,6 +287,12 @@ table {
 td,
 th {
   padding: 0;
+}
+
+// picalili.li
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
 /* joshwcomeau */
