@@ -1,3 +1,11 @@
+// layout
+
+.utils_layout {
+  &--limit-for-readibility {
+    max-width: 40em;
+  }
+}
+
 // box
 
 .utils_box {
@@ -54,13 +62,18 @@
 // effect
 
 .utils_effect {
-  &--kp-btn:hover {
-    // Kevin Powell's technique
+  // Kevin Powell's favorite button
+  &--kp-btn:hover,
+  &--kp-btn:focus {
     transform: scale(1.2);
   }
-  &--kp-btn:focus {
-    // Kevin Powell's technique
-    outline-offset: 0.5em;
+  @supports selector(:focus-visible) {
+    &--kp-btn:focus {
+      transform: scale(1);
+    }
+    &--kp-btn:focus-visible {
+      outline-offset: 0.5em;
+    }
   }
 }
 

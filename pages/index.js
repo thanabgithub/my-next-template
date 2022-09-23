@@ -3,15 +3,27 @@ const backgroundColor = "#eee";
 export default function Home() {
   return (
     <>
-      <div className="hello utils_box--center-children--stretch">
+      <main>
+        <div className="hello utils_box--center-children--stretch">
+          <h2 className="card">Hello World</h2>
+          <h2 className="card"> scss test</h2>
+        </div>
+        {/* <div className="hello utils_box--center-children--fit">
         <h2 className="card">Hello World</h2>
         <h2 className="card"> scss test</h2>
-      </div>
-      <div className="hello utils_box--center-children--fit utils_effect--kp-btn">
-        <h2 className="card">Hello World</h2>
-        <h2 className="card"> scss test</h2>
-      </div>
+      </div> */}
+        <div className="test-read"></div>
+        <div className="test-read utils_layout--limit-for-readibility"></div>
+      </main>
       <style jsx>{`
+        .test-read {
+          width: 100%;
+          height: 1em;
+          background-color: purple;
+          margin: auto;
+          margin-bottom: 5em;
+        }
+
         .card {
           background-color: var(--glob-vars_color-primary-400);
         }
