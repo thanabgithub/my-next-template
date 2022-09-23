@@ -2,10 +2,19 @@ const backgroundColor = "#eee";
 
 export default function Home() {
   return (
-    <div className="hello">
-      <h2 class="utils_text--left">Hello World</h2>
-      <h2 className="hello__element"> scss test</h2>
+    <>
+      <div className="hello utils_box--center-children--stretch">
+        <h2 className="card">Hello World</h2>
+        <h2 className="card"> scss test</h2>
+      </div>
+      <div className="hello utils_box--center-children--fit">
+        <h2 className="card">Hello World</h2>
+        <h2 className="card"> scss test</h2>
+      </div>
       <style jsx>{`
+        .card {
+          background-color: var(--glob-vars_color-primary-400);
+        }
         .hello {
           background-color: ${backgroundColor};
           padding: 100px;
@@ -19,6 +28,6 @@ export default function Home() {
           }
         }
       `}</style>
-    </div>
+    </>
   );
 }

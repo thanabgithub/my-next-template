@@ -1,14 +1,33 @@
 // box
 
-.utils_p {
-  &--3em {
+.utils_box {
+  // padding
+  &--p--3em {
     padding: 3em;
   }
-}
 
-.utils_m {
-  &--0em {
-    margin: 0em;
+  // centering
+  &--center-children--stretch {
+    display: grid;
+    place-content: center;
+  }
+  &--center-children--fit {
+    display: grid;
+    place-items: center;
+  }
+  &--center-self {
+    margin: auto;
+  }
+
+  // display
+  &--display--inline {
+    display: inline;
+  }
+  &--display--block {
+    display: block;
+  }
+  &--display--inline-block {
+    display: inline-block;
   }
 }
 

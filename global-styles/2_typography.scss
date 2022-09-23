@@ -4,6 +4,7 @@
 body {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: calc(14px + 0.35 * var(--glob-vars_size-read));
+  color: var(--glob-vars_color-black);
   /* Responsive base font size */
   line-height: calc(14px + 1.05 * var(--glob-vars_size-read));
   /* Responsive Vertical Rhythm */
