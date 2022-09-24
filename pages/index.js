@@ -3,7 +3,7 @@ const backgroundColor = "#eee";
 export default function Home() {
   return (
     <>
-      <main class="utils_layout--grid-auto-flow">
+      <main className="utils_layout--grid-auto-flow--m-size">
         {/* <div className="hello utils_box--center-children--stretch">
           <h2 className="card utils_layout--limit-for-readibility">Hello World</h2>
           <h2 className="card utils_layout--limit-for-readibility"> scss test</h2>

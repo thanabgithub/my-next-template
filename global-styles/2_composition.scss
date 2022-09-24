@@ -1,7 +1,7 @@
 // since we need to setup the definition of 1em first, this file should be loaded after typograpy setup
-
+@use "glob-vars.scss";
 body {
-  background-color: var(--glob-vars_color-white);
+  background-color: glob-vars.$color-white;
 }
 
 * + :is(h1, h2, h3, h4, h5, h6, p) {

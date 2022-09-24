@@ -1,0 +1,21 @@
+// size
+$size-read: calc(1 * min(1vw, 1vh));
+$size-watch: 1vw;
+
+// color
+$color-black: #0b0909;
+$color-white: #fafafa;
+
+$color-primary-300: #f24066;
+$color-primary-400: #f50035;
+$color-primary-500: #c5002b;
+
+// layout
+/// breakpoint
+$breakpoint--m-size: 40em;
+
+/// readibility
+$readable-width: $breakpoint--m-size;
+
+/// grid
+$grid--m-size: 30em;
