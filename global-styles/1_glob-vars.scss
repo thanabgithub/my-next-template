@@ -1,3 +1,8 @@
+// since media queries can't understand var we need scss custom property
+// breakpoint
+$glob-vars_readibility: 40em;
+$glob-vars_breakpoint--m-size: $glob-vars_readibility;
+
 :root {
   // size
   --glob-vars_size-read: calc(1 * min(1vw, 1vh));
@@ -10,5 +15,7 @@
   --glob-vars_color-primary-300: #f24066;
   --glob-vars_color-primary-400: #f50035;
   --glob-vars_color-primary-500: #c5002b;
+
   // breakpoint
+  --glob-vars_breakpoint--m-size: $glob-vars_breakpoint--m-size;
 }

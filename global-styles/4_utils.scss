@@ -1,14 +1,35 @@
-// layout
+@use "1_glob-vars.scss" as *;
 
+// layout
 .utils_layout {
   &--limit-for-readibility {
-    max-width: 40em;
+    max-width: var(--glob-vars_breakpoint--m-size);
     padding: 1em;
   }
 }
 
-// box
+[class*="utils_layout--grid"] {
+  display: grid;
+  gap: 1em;
+  grid-gap: 1em;
+}
 
+.utils_layout--grid {
+  &-even-columns--m-size {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--glob-vars_breakpoint--m-size), 100%), 1fr)
+    );
+  }
+}
+$glob-vars_breakpoint--m-size: 40em; //var(--glob-vars_breakpoint--m-size);
+@media (min-width: $glob-vars_breakpoint--m-size) {
+  .utils_layout--grid-auto-flow {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+// box
 .utils_box {
   // padding
   &--p--3em {
@@ -20,10 +41,12 @@
     display: grid;
     place-content: center;
   }
+
   &--center-children--fit {
     display: grid;
     place-items: center;
   }
+
   &--center-self {
     margin: auto;
   }
@@ -32,29 +55,34 @@
   &--display--inline {
     display: inline;
   }
+
   &--display--block {
     display: block;
   }
+
   &--display--inline-block {
     display: inline-block;
   }
 }
 
 // text
-
 .utils_text {
   &--center {
     text-align: center;
   }
+
   &--left {
     text-align: left;
   }
+
   &--right {
     text-align: right;
   }
+
   &--justify {
     text-align: justify;
   }
+
   &--match-parent {
     text-align: match-parent;
   }
@@ -68,10 +96,12 @@
   &--kp-btn:focus {
     transform: scale(1.2);
   }
+
   @supports selector(:focus-visible) {
     &--kp-btn:focus {
       transform: scale(1);
     }
+
     &--kp-btn:focus-visible {
       outline-offset: 0.5em;
     }
