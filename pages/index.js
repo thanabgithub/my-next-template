@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <>
-      <div className="[ page-wrapper ] [ flow ]">
-        <div className="[ a-card ] [ box--margin-inline--1em box--padding--1em box--border-radius--1em box--bg-neutral-400 box--shadow-elevation-high box--right ]">
+      <div className="[main][ page-wrapper ] [ flow ]">
+        <div className="[ main__a-card ] [ box--margin-inline--1em box--padding--1em box--border-radius--1em box--bg-neutral-400 box--shadow-elevation-high box--right ]">
           <h1>Lorem Ipsum</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -16,7 +16,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="[ b-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high box--left text--right ]">
+        <div className="[ main__b-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high box--left text--right ]">
           <h2>Lorem Ipsum</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -30,7 +30,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="[ c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
+        <div className="[ main__c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
           <h4>Lorem Ipsum</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -44,7 +44,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="[ c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
+        <div className="[ main__c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
           <h5>Lorem Ipsum</h5>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -58,7 +58,10 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="[ c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
+        <div
+          className="[ main__c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]"
+          data-type="exception"
+        >
           <h6>Lorem Ipsum</h6>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -82,14 +85,19 @@ export default function Home() {
             display: flex;
             flex-wrap: wrap;
           }
-          .a-card {
+          .main__a-card {
             width: 50%;
           }
-          .b-card {
+          .main__b-card {
             width: 30%;
           }
         }
-        .c-card {
+
+        .main__c-card {
+        }
+
+        .main__c-card[data-type="exception"] {
+          color: glob-vars.$color-primary-400;
         }
       `}</style>
     </>
