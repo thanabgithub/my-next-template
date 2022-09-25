@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="page-wrapper--columns-demo">
         <h1> "columns" property demo</h1>
-        <div className="card--columns-demo h1-card layout--limit-for-readibility box--right">
+        <div className="card--columns-demo h1-card box--right">
           <h2>Lorem Ipsum</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -19,7 +19,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="card--columns-demo h2-card layout--limit-for-readibility box--left text--right">
+        <div className="card--columns-demo h2-card box--left text--right">
           <h2>Lorem Ipsum</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -33,7 +33,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="card--columns-demo layout--limit-for-readibility">
+        <div className="card--columns-demo">
           <h4>Lorem Ipsum</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -47,7 +47,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="card--columns-demo layout--limit-for-readibility">
+        <div className="card--columns-demo">
           <h5>Lorem Ipsum</h5>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -61,7 +61,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="card--columns-demo layout--limit-for-readibility">
+        <div className="card--columns-demo">
           <h6>Lorem Ipsum</h6>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       <style jsx>{`
         .page-wrapper--columns-demo {
-          columns: 30em;
+          columns: 20em;
         }
 
         .page-wrapper--columns-demo h1 {
