@@ -6,13 +6,30 @@ $size-watch: 1vw;
 $color-black: #0b0909;
 $color-white: #fafafa;
 
+$color-neutral-shadow-300: #a1a1a140;
+$color-neutral-shadow-400: #a1a1a180;
+$color-neutral-shadow-500: #a1a1a1bf;
+
+$color-black-shadow-300: #0b090980;
+$color-black-shadow-400: #0b0909bf;
+$color-black-shadow-500: #0b0909;
+
+$color-neutral-400: #cacaca;
+
 $color-primary-300: #f24066;
 $color-primary-400: #f50035;
 $color-primary-500: #c5002b;
 
+// shadow palette
+$shadow-elevation-high: 0px 0.1px 0.1px $color-neutral-shadow-400,
+  0px 0.6px 0.7px -0.5px $color-neutral-shadow-400,
+  -0.1px 1.2px 1.4px -1px $color-neutral-shadow-400,
+  -0.1px 2.4px 2.7px -1.5px $color-neutral-shadow-400,
+  -0.2px 4.4px 5px -2px $color-neutral-shadow-400,
+  -0.3px 7.6px 8.6px -2.4px $color-neutral-shadow-400;
 // layout
 /// breakpoint
-$breakpoint--m-size: 30em;
+$breakpoint--m-size: 50em;
 
 /// readibility
 $readable-width: $breakpoint--m-size;

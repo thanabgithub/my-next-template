@@ -8,3 +8,7 @@ body {
   margin-top: 0.5em;
   /* Responsive margins */
 }
+
+.flow > * + * {
+  margin-top: 1em;
+}
