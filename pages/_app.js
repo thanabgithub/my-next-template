@@ -35,16 +35,7 @@ export default function MyApp({ Component, pageProps }) {
           />
         </noscript>
       </Head>
-      <div className="page-wrapper">
-        <Component {...pageProps} />
-      </div>
-      <style jsx>{`
-        .page-wrapper {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-        }
-      `}</style>
+      <Component {...pageProps} />
     </>
   );
 }
