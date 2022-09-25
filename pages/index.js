@@ -30,7 +30,7 @@ export default function Home() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="[ main__c-card ] [ box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
+        <div className="[ main__c-card ] [ box--border--left box--margin-inline--1em box--padding--1em box--bg-neutral-400 box--shadow-elevation-high ]">
           <h4>Lorem Ipsum</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

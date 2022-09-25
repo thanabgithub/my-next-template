@@ -12,3 +12,7 @@ body {
 .flow > * + * {
   margin-top: 1em;
 }
+
+::selection {
+  background: pink;
+}

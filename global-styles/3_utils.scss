@@ -22,8 +22,6 @@
   }
 }
 
-$glob-vars_breakpoint--m-size: 40em; //glob-vars.$breakpoint--m-size;
-
 @media (min-width: glob-vars.$breakpoint--m-size) {
   .layout--grid-auto-flow--m-size {
     grid-auto-flow: column;
@@ -104,11 +102,13 @@ $glob-vars_breakpoint--m-size: 40em; //glob-vars.$breakpoint--m-size;
     display: inline-block;
   }
 
-  // border-radius
+  // border
   &--border-radius--1em {
     border-radius: 1em;
   }
-
+  &--border--left {
+    border-left: 0.25em solid glob-vars.$color-black;
+  }
   // shadow
   &--shadow-elevation-high {
     box-shadow: glob-vars.$shadow-elevation-high;
