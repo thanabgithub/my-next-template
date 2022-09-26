@@ -29,6 +29,16 @@
   }
 }
 
+@media (min-width: glob-vars.$breakpoint--m-size) {
+  .layout--flexbox-even-columns--m-size {
+    display: flex;
+    gap: 1em;
+  }
+  .layout--flexbox-even-columns--m-size > * {
+    flex-basis: 100%;
+  }
+}
+
 // box
 .box {
   // padding
@@ -91,6 +101,10 @@
   // color
   &--bg-neutral-400 {
     background-color: glob-vars.$color-neutral-400;
+  }
+
+  &--bg-primary-400 {
+    background-color: glob-vars.$color-primary-400;
   }
 
   // display
