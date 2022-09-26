@@ -1,10 +1,26 @@
-# deal with conflict version of dependencies
+# DOCKER
+
+## build image
+
+```
+docker build . -t <image name>:<version> --no-cache
+```
+
+## deploy container and acce3ss bash terminal
+
+```
+docker run -p <localhost port>:<container port> -it <image name>:<version> bash
+```
+
+# OTHERS
+
+## deal with conflict version of dependencies
 
 ```
 npm install --legacy-peer-deps
 ```
 
-# check whether there is any process at port 80
+## check whether there is any process at port 80
 
 ```
 fuser 80/tcp

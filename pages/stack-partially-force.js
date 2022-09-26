@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="[main][ page-wrapper ]">
+      <div className="[ main ] [ page-wrapper ]">
         <div className="[ main__a-card ] [ box--padding--1em box--border-radius--1em box--bg-primary-400 box--shadow-elevation-high box--right ]">
           <h1>Lorem Ipsum</h1>
           <p>

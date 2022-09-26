@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="[main][ layout--grid-even-columns--m-size ]">
+      <div className="[ main ] [ layout--grid-even-columns--m-size ]">
         <div className="[ box--margin-inline--1em box--padding--1em box--border-radius--1em box--bg-neutral-400 box--shadow-elevation-high]">
           <h1>Lorem Ipsum</h1>
           <p>
