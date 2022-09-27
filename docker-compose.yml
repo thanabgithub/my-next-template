@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+  frontend:
+    build:
+      context: .
+      target: runner
+    ports:
+      # - <local port>:<container port>
+      - "80:3000"
+    volumes:
+      # avoid bind mount database
+      # for mac, :delegated is necessary to allow lagging of mounting to enable the service in container to execute timely
+      # for windows, there are tons of possible issues...
+      - ./cache:/tmp/cache:delegated

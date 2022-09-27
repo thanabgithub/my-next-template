@@ -3,7 +3,7 @@
 ## build image
 
 ```
-docker build . -t <image name>:<version>
+docker build -t <image name>:<version> .
 ```
 
 Ex.
