@@ -3,13 +3,13 @@
 ## build image
 
 ```
-docker build . -t <image name>:<version> --no-cache
+docker build . -t <image name>:<version>
 ```
 
 Ex.
 
 ```
-docker build . -t test:2 --no-cache
+docker build . -t test:2
 ```
 
 ## deploy container and access bash terminal

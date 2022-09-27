@@ -3,7 +3,8 @@
 @use "glob-vars.scss";
 
 $body--font-size: calc(14px + 0.35 * glob-vars.$size-read);
-$body--line-height-multiplier: 1.5;
+// https://designsystem.digital.gov/design-tokens/typesetting/overview/
+$body--line-height-multiplier: 1.42;
 $body--line-height: calc($body--line-height-multiplier * $body--font-size);
 $h-family--line-height-multiplier: 1;
 $margin-bottom-multiplier: 0.5;
