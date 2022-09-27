@@ -22,3 +22,8 @@ docker build -t myapp:2.0_runner --target runner .
 docker image prune --force
 docker run -p 80:3000 myapp:2.0_runner
 ```
+
+```
+docker-compose up -d
+docker-compose exec app bash
+```
