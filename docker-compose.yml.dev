@@ -1,15 +1,39 @@
 version: "2.4"
 services:
   app:
+    container_name: app
     build:
-      context: .
-      target: builder
+      context: ./app
+      target: runner
     ports:
       # - <local port>:<container port>
       - "80:3000"
+    # volumes:
+    #   # avoid bind mount database
+    #   # for mac, :delegated is necessary to allow lagging of mounting to enable the service in container to execute timely
+    #   # for windows, there are tons of possible issues...
+    #   - ./app:/app
+    command: bash -c "tail -f /dev/null"
+    healthcheck:
+      test: echo "hello"
+  #     test: curl -f http://127.0.0.1:3000
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # # dummy database
+  postgres:
+    container_name: postgres
+    image: postgres:14.5-bullseye
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      PGDATA: /var/lib/postgresql/data/${DB_DIR}
     volumes:
-      # avoid bind mount database
-      # for mac, :delegated is necessary to allow lagging of mounting to enable the service in container to execute timely
-      # for windows, there are tons of possible issues...
-      - ./cache:/tmp/cache:delegated
-#    command: bash -c "tail -f /dev/null"
+      - ./postgres/${DB_DIR}:/var/lib/postgresql/postgres/${DB_DIR}
+    healthcheck:
+      test: pg_isready -h 127.0.0.1
+      interval: 1s
+      timeout: 2s
+      retries: 100
