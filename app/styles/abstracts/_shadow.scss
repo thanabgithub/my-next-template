@@ -1,0 +1,9 @@
+@use "./color";
+// future work copy color palette from https://mobileui.github.io/#colors
+// shadow palette
+$shadow-elevation-high: 0px 0.1px 0.1px color.$color-neutral-opacity-400,
+  0px 0.6px 0.7px -0.5px color.$color-neutral-opacity-400,
+  -0.1px 1.2px 1.4px -1px color.$color-neutral-opacity-400,
+  -0.1px 2.4px 2.7px -1.5px color.$color-neutral-opacity-400,
+  -0.2px 4.4px 5px -2px color.$color-neutral-opacity-400,
+  -0.3px 7.6px 8.6px -2.4px color.$color-neutral-opacity-400;

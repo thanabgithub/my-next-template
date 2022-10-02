@@ -1,0 +1,6 @@
+@use "./size";
+$breakpoint--m-size: 60ch;
+
+$readable-width: $breakpoint--m-size;
+
+$grid--m-size: 60ch;

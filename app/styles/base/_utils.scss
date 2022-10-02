@@ -1,9 +1,9 @@
-@use "glob-vars.scss";
+@use "../abstracts";
 
 // layout
 .layout {
   &--limit-for-readibility {
-    max-width: glob-vars.$readable-width;
+    max-width: abstracts.$readable-width;
     padding: 1em;
   }
 }
@@ -17,19 +17,19 @@
   &-even-columns--m-size {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(min(glob-vars.$grid--m-size, 100%), 1fr)
+      minmax(min(abstracts.$grid--m-size, 100%), 1fr)
     );
   }
 }
 
-@media (min-width: glob-vars.$breakpoint--m-size) {
+@media (min-width: abstracts.$breakpoint--m-size) {
   .layout--grid-auto-flow--m-size {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
 }
 
-@media (min-width: glob-vars.$breakpoint--m-size) {
+@media (min-width: abstracts.$breakpoint--m-size) {
   .layout--flexbox-even-columns--m-size {
     display: flex;
     gap: 1em;
@@ -100,11 +100,11 @@
 
   // color
   &--bg-neutral-400 {
-    background-color: glob-vars.$color-neutral-400;
+    background-color: abstracts.$color-neutral-400;
   }
 
   &--bg-primary-400 {
-    background-color: glob-vars.$color-primary-400;
+    background-color: abstracts.$color-primary-400;
   }
 
   // display
@@ -125,11 +125,11 @@
     border-radius: 1em;
   }
   &--border--left {
-    border-left: 0.25em solid glob-vars.$color-black;
+    border-left: 0.25em solid abstracts.$color-black;
   }
   // shadow
   &--shadow-elevation-high {
-    box-shadow: glob-vars.$shadow-elevation-high;
+    box-shadow: abstracts.$shadow-elevation-high;
   }
 }
 

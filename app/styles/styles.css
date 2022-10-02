@@ -1,0 +1,508 @@
+/* mix of normalize.css and joshwcomeau */
+/* autoprefixer grid: autoplace */
+/* normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* joshwcomeau */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* joshwcomeau */
+html,
+body {
+  height: 100%;
+}
+
+/* joshwcomeau */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  /* disable double-tab zoom iOS */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  /* https://css-tricks.com/the-notch-and-css/ */
+  overscroll-behavior-x: none;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* joshwcomeau, thana */
+img,
+picture,
+video,
+canvas,
+svg,
+figure,
+progress {
+  display: block;
+  max-width: 100%;
+  border: 0;
+}
+
+/* normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* joshwcomeau */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* thana, normalize.css */
+a,
+a:link,
+a:hover,
+a:visited,
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/* normalize.css */
+small {
+  font-size: 80%;
+}
+
+/* normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* normalize.css */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* normalize.css */
+pre {
+  overflow: auto;
+}
+
+/* normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* normalize.css */
+button {
+  overflow: visible;
+}
+
+/* normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/* normalize.css */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* furtive.co */
+button {
+  overflow: visible;
+  -webkit-user-select: none;
+  /* Safari */
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  /* Standard syntax */
+}
+
+/* furtive.co */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* normalize.css */
+input {
+  line-height: normal;
+}
+
+/* normalize.css */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/* normalize.css */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* normalize.css */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/* normalize.css */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* normalize.css */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/* normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* normalize.css */
+td,
+th {
+  padding: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* joshwcomeau */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
+/* autoprefixer grid: autoplace */
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: calc(14px + 0.35 * 1 * min(1vw, 1vh));
+  line-height: calc(1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+  color: #0b0909;
+}
+
+h1 {
+  font-size: 1.912em;
+  line-height: max(1.912em, 1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+}
+
+h2 {
+  font-size: 1.616em;
+  line-height: max(1.616em, 1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+}
+
+h3 {
+  font-size: 1.471em;
+  line-height: max(1.471em, 1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+}
+
+h4 {
+  font-size: 1.3em;
+  line-height: max(1.3em, 1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+}
+
+h5 {
+  font-size: 1.243em;
+  line-height: max(1.243em, 1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+}
+
+h6 {
+  font-size: 1.132em;
+  line-height: max(1.132em, 1.42 * (14px + 0.35 * 1 * min(1vw, 1vh)));
+}
+
+body {
+  background-color: #fafafa;
+}
+
+* + :is(h1, h2, h3, h4, h5, h6, p) {
+  margin-top: 0.5em;
+  /* Responsive margins */
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+::-moz-selection {
+  background: pink;
+}
+
+::selection {
+  background: pink;
+}
+
+.layout--limit-for-readibility {
+  max-width: 60ch;
+  padding: 1em;
+}
+
+[class*=layout--grid] {
+  display: -ms-grid;
+  display: grid;
+}
+
+.layout--grid-even-columns--m-size {
+  grid-template-columns: repeat(auto-fit, minmax(min(60ch, 100%), 1fr));
+}
+
+@media (min-width: 60ch) {
+  .layout--grid-auto-flow--m-size {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+@media (min-width: 60ch) {
+  .layout--flexbox-even-columns--m-size {
+    display: flex;
+    gap: 1em;
+  }
+  .layout--flexbox-even-columns--m-size > * {
+    flex-basis: 100%;
+  }
+}
+.box--padding--1em {
+  padding: 1em;
+}
+
+.box--padding--3em {
+  padding: 3em;
+}
+
+.box--padding--5em {
+  padding: 5em;
+}
+
+.box--padding--20em {
+  padding: 20em;
+}
+
+.box--margin-inline--1em {
+  margin-inline: 1em;
+}
+
+.box--margin--1em {
+  margin: 5em;
+}
+
+.box--margin--5em {
+  margin: 5em;
+}
+
+.box--center-children--stretch {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.box--center-children--fit {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.box--center {
+  margin: auto;
+}
+
+.box--center-inline {
+  margin-inline: auto;
+}
+
+.box--left {
+  margin-right: auto;
+}
+
+.box--right {
+  margin-left: auto;
+}
+
+.box--bg-neutral-400 {
+  background-color: #cacaca;
+}
+
+.box--bg-primary-400 {
+  background-color: #f50035;
+}
+
+.box--display--inline {
+  display: inline;
+}
+
+.box--display--block {
+  display: block;
+}
+
+.box--display--inline-block {
+  display: inline-block;
+}
+
+.box--border-radius--1em {
+  border-radius: 1em;
+}
+
+.box--border--left {
+  border-left: 0.25em solid #0b0909;
+}
+
+.box--shadow-elevation-high {
+  box-shadow: 0px 0.1px 0.1px rgba(161, 161, 161, 0.5019607843), 0px 0.6px 0.7px -0.5px rgba(161, 161, 161, 0.5019607843), -0.1px 1.2px 1.4px -1px rgba(161, 161, 161, 0.5019607843), -0.1px 2.4px 2.7px -1.5px rgba(161, 161, 161, 0.5019607843), -0.2px 4.4px 5px -2px rgba(161, 161, 161, 0.5019607843), -0.3px 7.6px 8.6px -2.4px rgba(161, 161, 161, 0.5019607843);
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.text--match-parent {
+  text-align: match-parent;
+}
+
+.effect--kp-btn:hover, .effect--kp-btn:focus {
+  transform: scale(1.2);
+}
+
+@supports selector(:focus-visible) {
+  .effect--kp-btn:focus {
+    transform: scale(1);
+  }
+  .effect--kp-btn:focus-visible {
+    outline-offset: 0.5em;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,4 @@
-import "/global-styles/0_normalize.scss";
-import "/global-styles/1_typography.scss";
-import "/global-styles/2_composition.scss";
-import "/global-styles/3_utils.scss";
-import "/global-styles/99_chrome-bug.scss";
-
+import "/styles/styles.scss";
 import Head from "next/head";
 import { useEffect } from "react";
 

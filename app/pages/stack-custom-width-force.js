@@ -77,19 +77,19 @@ export default function Home() {
         </div>
       </div>
       <style jsx>{`
-        @use "../global-styles/glob-vars.scss";
+        @use "../styles/abstracts";
 
-        @media (min-width: glob-vars.$breakpoint--m-size) {
+        @media (min-width: abstracts.$breakpoint--m-size) {
           .page-wrapper {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
           }
           .main__a-card {
-            width: min(50%, glob-vars.$readable-width);
+            width: min(50%, abstracts.$readable-width);
           }
           .main__b-card {
-            width: min(30%, 3 / 5 * glob-vars.$readable-width);
+            width: min(30%, 3 / 5 * abstracts.$readable-width);
           }
         }
 
@@ -97,7 +97,7 @@ export default function Home() {
         }
 
         .main__c-card[data-type="exception"] {
-          color: glob-vars.$color-primary-400;
+          color: abstracts.$color-primary-400;
         }
       `}</style>
     </>

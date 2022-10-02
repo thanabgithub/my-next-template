@@ -1,8 +1,8 @@
 /* https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g */
 
-@use "glob-vars.scss";
+@use "../abstracts";
 
-$body--font-size: calc(14px + 0.35 * glob-vars.$size-read);
+$body--font-size: calc(14px + 0.35 * abstracts.$size-read);
 // https://designsystem.digital.gov/design-tokens/typesetting/overview/
 $body--line-height-multiplier: 1.42;
 $body--line-height: calc($body--line-height-multiplier * $body--font-size);
@@ -11,10 +11,10 @@ $margin-bottom-multiplier: 0.5;
 /* autoprefixer grid: autoplace */
 body {
   font-family: "Roboto", Helvetica, sans-serif;
-  // --body--font-size: calc(14px + 0.35 * glob-vars.$size-read);
+  // --body--font-size: calc(14px + 0.35 * abstracts.$size-read);
   font-size: $body--font-size;
   line-height: $body--line-height;
-  color: glob-vars.$color-black;
+  color: abstracts.$color-black;
 }
 
 h1 {

@@ -1,7 +1,8 @@
 // since we need to setup the definition of 1em first, this file should be loaded after typograpy setup
-@use "glob-vars.scss";
+@use "../abstracts";
+
 body {
-  background-color: glob-vars.$color-white;
+  background-color: abstracts.$color-white;
 }
 
 * + :is(h1, h2, h3, h4, h5, h6, p) {
